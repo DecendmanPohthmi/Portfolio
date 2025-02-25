@@ -22,7 +22,7 @@ const Navbar = () => {
       </ul>
 
       {/* Connect Button */}
-      <div className="nav-connect">Connect with me</div>
+      <div className="nav-connect"><Anchorlink className="anchor-link" href="#contact">Connect with Us</Anchorlink></div>
     </nav>
   );
 };
