@@ -1,0 +1,44 @@
+/* Footer Styles */
+footer {
+    /* Background color */
+    background-color: #24292f; 
+  
+    /* Text color */
+    color: #fff;
+  
+    /* Padding */
+    padding: 2rem 0; 
+  
+    /* Text alignment */
+    text-align: center;
+  }
+  
+  footer a {
+    /* Social icon size */
+    font-size: 1.5rem; 
+  
+    /* Social icon color */
+    color: #fff; 
+  
+    /* Margin between icons */
+    margin: 0 1rem; 
+  
+    /* Transition for smooth hover effect */
+    transition: color 0.3s ease; 
+  }
+  
+  footer a:hover {
+    /* Social icon hover color */
+    color: #6e7681; 
+  }
+  
+  footer p {
+    /* Copyright text size */
+    font-size: 0.875rem; 
+  
+    /* Copyright text opacity */
+    opacity: 0.8; 
+  
+    /* Margin top */
+    margin-top: 1rem; 
+  }
