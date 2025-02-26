@@ -8,7 +8,7 @@ const projects = [
     name: "Portfolio Website",
     description: "A personal portfolio showcasing my skills, projects, and experience.",
     image: portfolioImage,
-    link: "https://github.com/yourusername/portfolio",
+    link: "https://github.com/DecendmanPohthmi/Portfolio.git",
     liveDemo: "https://yourportfolio.com",
     technologies: ["React", "CSS", "JavaScript"]
   },
@@ -16,7 +16,7 @@ const projects = [
     name: "TastyBites",
     description: "An online food ordering and subscription-based delivery system.",
     image: tastybitesImage,
-    link: "https://github.com/yourusername/tastybites",
+    link: "https://github.com/DecendmanPohthmi/My_Resturant.git",
     liveDemo: "https://tastybites.com",
     technologies: ["MERN Stack", "Stripe Payment"]
   }
