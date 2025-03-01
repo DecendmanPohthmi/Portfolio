@@ -1,5 +1,6 @@
 import React from 'react'
 import AdminChat from './AdminChat'
+import './index.css'
 
 const App = () => {
   return (

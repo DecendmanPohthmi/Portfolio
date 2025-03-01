@@ -141,6 +141,32 @@
   height: 50px;
 }
 
+.resume {
+  margin-top: 30px;
+}
+
+.resume input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.resume-download {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resume-download:hover {
+  background: #0056b3;
+}
+
+
 @keyframes scrollLogos {
   from {
     transform: translateX(0);

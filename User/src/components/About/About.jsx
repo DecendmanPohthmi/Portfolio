@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./About.css";
 import de_profile from "../../assets/about_profile.jpg";
 import md_profile from "../../assets/MD_profile.jpeg";
@@ -8,9 +8,11 @@ import java_logo from "../../assets/java/java.svg";
 import c_logo from "../../assets/c/c.svg";
 import python_logo from "../../assets/python/python.svg";
 import js_logo from "../../assets/javascript/javascript.svg";
-import type_script_logo from "../../assets/typescript/typescript.svg";
 import html_logo from "../../assets/html/html.svg";
 import css_logo from "../../assets/css/css.svg";
+import mongodb_logo from "../../assets/database/mongodb.png";
+import postgresql_logo from "../../assets/database/postgresql.png";
+import resume from '../../assets/resume.pdf'
 
 const AboutMe = () => {
   return (
@@ -33,11 +35,11 @@ const AboutMe = () => {
             </p>
             <p className="text">
               I specialize in backend development, working with technologies
-              like Python, PostgreSQL, and MongoDB. I also have experience with
-              full-stack development using the MERN stack.
+              like Python, Node, Express, PostgreSQL, and MongoDB. I also have
+              experience with full-stack development using the MERN stack.
             </p>
             <p className="text">
-              Currently, I'm working on projects like a Music sheet-to-audio
+              Currently, I'm working on projects like a Music audio-to-sheet
               converter. I'm also expanding my portfolio and building a
               subscription-based food delivery system for TastyBites.
             </p>
@@ -49,17 +51,19 @@ const AboutMe = () => {
                   <img src={python_logo} alt="Python" />
                   <img src={c_logo} alt="C" />
                   <img src={js_logo} alt="JavaScript" />
-                  <img src={type_script_logo} alt="TypeScript" />
                   <img src={css_logo} alt="CSS" />
                   <img src={html_logo} alt="HTML" />
+                  <img src={mongodb_logo} alt="mongodb" />
+                  <img src={postgresql_logo} alt="postgresql" />
                   {/* Duplicate the images to create a smooth infinite loop */}
                   <img src={java_logo} alt="Java" />
                   <img src={python_logo} alt="Python" />
                   <img src={c_logo} alt="C" />
                   <img src={js_logo} alt="JavaScript" />
-                  <img src={type_script_logo} alt="TypeScript" />
                   <img src={css_logo} alt="CSS" />
                   <img src={html_logo} alt="HTML" />
+                  <img src={mongodb_logo} alt="mongodb" />
+                  <img src={postgresql_logo} alt="postgresql" />
                 </ul>
               </div>
             </div>
@@ -94,7 +98,7 @@ const AboutMe = () => {
         </div>
 
         <div className="profiles-container">
-          {/* Decendman Pohthmi */}
+          {/* Khalid Ansari */}
           <div id="aboutMD" className="profile-card">
             <h2 className="title">MD Khalid Ansari</h2>
             <img
@@ -113,9 +117,8 @@ const AboutMe = () => {
               full-stack development using the MERN stack.
             </p>
             <p className="text">
-              Currently, I'm working on projects like a Music sheet-to-audio
-              converter. I'm also expanding my portfolio and building a
-              subscription-based food delivery system for TastyBites.
+              Currently, I'm working on a subscription-based food delivery
+              system for TastyBites.. I'm also expanding my portfolio.
             </p>
 
             <div className="programming-logo">
@@ -125,7 +128,6 @@ const AboutMe = () => {
                   <img src={python_logo} alt="Python" />
                   <img src={c_logo} alt="C" />
                   <img src={js_logo} alt="JavaScript" />
-                  <img src={type_script_logo} alt="TypeScript" />
                   <img src={css_logo} alt="CSS" />
                   <img src={html_logo} alt="HTML" />
                   {/* Duplicate the images to create a smooth infinite loop */}
@@ -133,7 +135,6 @@ const AboutMe = () => {
                   <img src={python_logo} alt="Python" />
                   <img src={c_logo} alt="C" />
                   <img src={js_logo} alt="JavaScript" />
-                  <img src={type_script_logo} alt="TypeScript" />
                   <img src={css_logo} alt="CSS" />
                   <img src={html_logo} alt="HTML" />
                 </ul>
@@ -162,7 +163,7 @@ const AboutMe = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:decendmanpohthmi@gmail.com">Email</a>
+                  <a href="mailto:mdkhalid.finance@gmail.com">Email</a>
                 </li>
               </ul>
             </div>
@@ -170,7 +171,7 @@ const AboutMe = () => {
         </div>
 
         <div className="profiles-container">
-          {/* Decendman Pohthmi */}
+          {/* Nitesh Sharma  */}
           <div id="aboutNI" className="profile-card">
             <h2 className="title">Nitesh Sharma</h2>
             <img
@@ -179,8 +180,8 @@ const AboutMe = () => {
               className="about_profile"
             />
             <p className="text">
-              Hi, I'm <span className="highlight">Nitesh Sharma</span>, a
-              BTech CSE student passionate about software development, web
+              Hi, I'm <span className="highlight">Nitesh Sharma</span>, a BTech
+              CSE student passionate about software development, web
               development.
             </p>
             <p className="text">
@@ -189,9 +190,8 @@ const AboutMe = () => {
               full-stack development using the MERN stack.
             </p>
             <p className="text">
-              Currently, I'm working on projects like a Music sheet-to-audio
-              converter. I'm also expanding my portfolio and building a
-              subscription-based food delivery system for TastyBites.
+              Currently, I'm working on a subscription-based food delivery
+              system for TastyBites.. I'm also expanding my portfolio.
             </p>
 
             <div className="programming-logo">
@@ -199,17 +199,13 @@ const AboutMe = () => {
                 <ul>
                   <img src={java_logo} alt="Java" />
                   <img src={python_logo} alt="Python" />
-                  <img src={c_logo} alt="C" />
                   <img src={js_logo} alt="JavaScript" />
-                  <img src={type_script_logo} alt="TypeScript" />
                   <img src={css_logo} alt="CSS" />
                   <img src={html_logo} alt="HTML" />
                   {/* Duplicate the images to create a smooth infinite loop */}
                   <img src={java_logo} alt="Java" />
                   <img src={python_logo} alt="Python" />
-                  <img src={c_logo} alt="C" />
                   <img src={js_logo} alt="JavaScript" />
-                  <img src={type_script_logo} alt="TypeScript" />
                   <img src={css_logo} alt="CSS" />
                   <img src={html_logo} alt="HTML" />
                 </ul>
@@ -238,7 +234,7 @@ const AboutMe = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:decendmanpohthmi@gmail.com">Email</a>
+                  <a href="mailto:mrnitesh2580@gmail.com">Email</a>
                 </li>
               </ul>
             </div>
@@ -246,28 +242,28 @@ const AboutMe = () => {
         </div>
 
         <div className="profiles-container">
-          {/* Decendman Pohthmi */}
+          {/* Shivraj Deka */}
           <div id="aboutSR" className="profile-card">
-            <h2 className="title">Shivraj Deka</h2>
+            <h2 className="title">Sivraj Deka</h2>
             <img
               src={sh_profile}
               alt="Shivraj Deka"
               className="about_profile"
             />
             <p className="text">
-              Hi, I'm <span className="highlight">Shivraj Deka</span>, a
-              BTech CSE student passionate about software development, web
-              development.
+              Hi, I'm <span className="highlight">Sivraj Deka</span>, a BTech
+              CSE student passionate about web designing, web development.
             </p>
             <p className="text">
-              I specialize in backend development, working with technologies
-              like Python, PostgreSQL, and MongoDB. I also have experience with
-              full-stack development using the MERN stack.
+              I specialize in front-end and UI/UX designing, working with
+              technologies like Figma, Canva, Adobe XD. I'am also learning
+              full-stack development with MERN stack. Also i have invested my
+              time in learning about game development as I have a keen interest
+              in that technology too.
             </p>
             <p className="text">
-              Currently, I'm working on projects like a Music sheet-to-audio
-              converter. I'm also expanding my portfolio and building a
-              subscription-based food delivery system for TastyBites.
+              Currently, I'm working on a subscription-based food delivery
+              system for TastyBites.. I'm also expanding my portfolio.
             </p>
 
             <div className="programming-logo">
@@ -275,17 +271,13 @@ const AboutMe = () => {
                 <ul>
                   <img src={java_logo} alt="Java" />
                   <img src={python_logo} alt="Python" />
-                  <img src={c_logo} alt="C" />
                   <img src={js_logo} alt="JavaScript" />
-                  <img src={type_script_logo} alt="TypeScript" />
                   <img src={css_logo} alt="CSS" />
                   <img src={html_logo} alt="HTML" />
                   {/* Duplicate the images to create a smooth infinite loop */}
                   <img src={java_logo} alt="Java" />
                   <img src={python_logo} alt="Python" />
-                  <img src={c_logo} alt="C" />
                   <img src={js_logo} alt="JavaScript" />
-                  <img src={type_script_logo} alt="TypeScript" />
                   <img src={css_logo} alt="CSS" />
                   <img src={html_logo} alt="HTML" />
                 </ul>
@@ -296,7 +288,7 @@ const AboutMe = () => {
               <h3>Contact & Links</h3>
               <ul>
                 <li>
-                  <a href="https://github.com/your-github" target="_blank">
+                  <a href="https://github.com/ShivDeka" target="_blank">
                     GitHub
                   </a>
                 </li>
@@ -314,12 +306,20 @@ const AboutMe = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:decendmanpohthmi@gmail.com">Email</a>
+                  <a href="mailto:shivdeka0987@gmail.com">Email</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+      </div>
+      {/* Email Input */}
+      <div className="resume">
+        <button className="redume-download">
+          <a href={resume} download="resume">
+            Download
+          </a>
+        </button>
       </div>
     </div>
   );

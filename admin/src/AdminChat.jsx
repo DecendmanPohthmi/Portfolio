@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { io } from "socket.io-client";
+import "./AdminChat.css";
 
 const socket = io("http://localhost:3000");
 
@@ -23,15 +24,26 @@ const AdminChat = () => {
   };
 
   return (
-    <div>
-      <h2>Admin Chat</h2>
-      <div style={{ height: "200px", overflowY: "auto", border: "1px solid black", padding: "10px" }}>
-        {messages.map((msg, index) => (
-          <p key={index}><strong>{msg.sender}:</strong> {msg.text}</p>
-        ))}
+    <div className="admin-chat">
+      <h2 className="chat-title">Admin Chat</h2>
+      <div className="chat-container">
+        <div className="chat-box">
+          {messages.map((msg, index) => (
+            <p key={index} className="chat-message">
+              <strong>{msg.sender}:</strong> {msg.text}
+            </p>
+          ))}
+        </div>
+        <div className="chat-input-container">
+          <input
+            className="chat-input"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Type a message..."
+          />
+          <button className="chat-send-button" onClick={sendMessage}>Send</button>
+        </div>
       </div>
-      <input value={input} onChange={(e) => setInput(e.target.value)} placeholder="Type a message..." />
-      <button onClick={sendMessage}>Send</button>
     </div>
   );
 };
