@@ -5,6 +5,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import path from "path";
 import { fileURLToPath } from "url";
+import "dotenv/config";
 
 const app = express();
 const server = createServer(app);
@@ -18,7 +19,7 @@ const __dirname = path.dirname(__filename);
 
 // Connect to MongoDB
 mongoose
-  .connect("mongodb+srv://decentpohthmi767:191224@cluster0.0yj01.mongodb.net/portfolio", {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
