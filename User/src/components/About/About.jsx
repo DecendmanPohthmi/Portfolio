@@ -12,9 +12,34 @@ import html_logo from "../../assets/html/html.svg";
 import css_logo from "../../assets/css/css.svg";
 import mongodb_logo from "../../assets/database/mongodb.png";
 import postgresql_logo from "../../assets/database/postgresql.png";
-import resume from '../../assets/resume.pdf'
 
 const AboutMe = () => {
+  const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!email) return alert("Please enter your email");
+
+    try {
+      const response = await fetch("http://localhost:3000/save-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (data.download) {
+        setSubmitted(true);
+        window.location.href = "http://localhost:3000/resume.pdf"; // Auto-download the resume
+      } else {
+        alert(data.message || "Something went wrong");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
   return (
     <div className="about" id="about">
       <h1 className="main-title">About Our Team</h1>
@@ -315,11 +340,20 @@ const AboutMe = () => {
       </div>
       {/* Email Input */}
       <div className="resume">
-        <button className="redume-download">
-          <a href={resume} download="resume">
-            Download
-          </a>
-        </button>
+        {!submitted ? (
+          <form onSubmit={handleSubmit}>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <button type="submit">Submit</button>
+          </form>
+        ) : (
+          <p>Downloading your resume...</p>
+        )}
       </div>
     </div>
   );
