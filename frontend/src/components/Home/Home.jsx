@@ -1,15 +1,11 @@
 import React from "react";
-import './Home.css'
+import './Home.css';
 import profile_image from "../../assets/profile_img.png";
-import AboutPage from "../AboutPage/AboutPage";
-import Contact from "../Contact/Contact";
-import ChatWithMe from "../Chat/ChatWithMe";
-import Project from "../Project/Project";
 
 const Home = () => {
   const teamName = "CodeExplorer".split("");
+
   return (
-    <>
     <div className="home" id="home">
       <div className="content">
         <div className="text">
@@ -32,11 +28,6 @@ const Home = () => {
         </div>
       </div>
     </div>
-    <AboutPage />
-    <Project />
-    <Contact />
-    <ChatWithMe />
-    </>
   );
 };
 
