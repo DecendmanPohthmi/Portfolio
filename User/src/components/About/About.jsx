@@ -349,10 +349,10 @@ const AboutMe = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <button type="submit">Submit</button>
+            <button type="submit">Download our Resume</button>
           </form>
         ) : (
-          <p>Downloading your resume...</p>
+          <p>Downloading resume...</p>
         )}
       </div>
     </div>
