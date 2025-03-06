@@ -1,39 +1,38 @@
 import React from "react";
 import './About.css'
 import { useNavigate } from "react-router-dom";
-import sh_profile from "../assets/Sh_profile.jpeg";
-import java_logo from "../assets/java/java.svg";
-import c_logo from "../assets/c/c.svg";
-import python_logo from "../assets/python/python.svg";
-import js_logo from "../assets/javascript/javascript.svg";
-import html_logo from "../assets/html/html.svg";
-import css_logo from "../assets/css/css.svg";
-import mongodb_logo from "../assets/database/mongodb.png";
-import postgresql_logo from "../assets/database/postgresql.png";
+import ni_profile from "../../assets/NI_profile.jpeg";
+import java_logo from "../../assets/java/java.svg";
+import c_logo from "../../assets/c/c.svg";
+import python_logo from "../../assets/python/python.svg";
+import js_logo from "../../assets/javascript/javascript.svg";
+import html_logo from "../../assets/html/html.svg";
+import css_logo from "../../assets/css/css.svg";
+import mongodb_logo from "../../assets/database/mongodb.png";
+import postgresql_logo from "../../assets/database/postgresql.png";
 
-const AboutSH = () => {
+const AboutNI = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 
   const navigate = useNavigate();
 
   return (
-    <div id="aboutSR" className="profile-card">
-            <h2 className="title">Sivraj Deka</h2>
+    <div id="aboutNI" className="profile-card">
+            <h2 className="titlee">Nitesh Sharma</h2>
             <img
-              src={sh_profile}
-              alt="Shivraj Deka"
+              src={ni_profile}
+              alt="Nitesh Sharma"
               className="about_profile"
             />
             <p className="text">
-              Hi, I'm <span className="highlight">Sivraj Deka</span>, a BTech
-              CSE student passionate about web designing, web development.
+              Hi, I'm <span className="highlight">Nitesh Sharma</span>, a BTech
+              CSE student passionate about software development, web
+              development.
             </p>
             <p className="text">
-              I specialize in front-end and UI/UX designing, working with
-              technologies like Figma, Canva, Adobe XD. I'am also learning
-              full-stack development with MERN stack. Also i have invested my
-              time in learning about game development as I have a keen interest
-              in that technology too.
+              I specialize in backend development, working with technologies
+              like Python, PostgreSQL, and MongoDB. I also have experience with
+              full-stack development using the MERN stack.
             </p>
             <p className="text">
               Currently, I'm working on a subscription-based food delivery
@@ -62,7 +61,7 @@ const AboutSH = () => {
               <h3>Contact & Links</h3>
               <ul>
                 <li>
-                  <a href="https://github.com/ShivDeka" target="_blank">
+                  <a href="https://github.com/your-github" target="_blank">
                     GitHub
                   </a>
                 </li>
@@ -80,7 +79,7 @@ const AboutSH = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:shivdeka0987@gmail.com">Email</a>
+                  <a href="mailto:mrnitesh2580@gmail.com">Email</a>
                 </li>
               </ul>
             </div>
@@ -89,4 +88,4 @@ const AboutSH = () => {
   );
 };
 
-export default AboutSH;
+export default AboutNI;

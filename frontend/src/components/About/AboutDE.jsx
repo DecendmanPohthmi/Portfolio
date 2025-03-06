@@ -1,15 +1,15 @@
 import React from "react";
 import "./About.css";
 import { useNavigate } from "react-router-dom";
-import de_profile from "../assets/about_profile.jpg";
-import java_logo from "../assets/java/java.svg";
-import c_logo from "../assets/c/c.svg";
-import python_logo from "../assets/python/python.svg";
-import js_logo from "../assets/javascript/javascript.svg";
-import html_logo from "../assets/html/html.svg";
-import css_logo from "../assets/css/css.svg";
-import mongodb_logo from "../assets/database/mongodb.png";
-import postgresql_logo from "../assets/database/postgresql.png";
+import de_profile from "../../assets/about_profile.jpg";
+import java_logo from "../../assets/java/java.svg";
+import c_logo from "../../assets/c/c.svg";
+import python_logo from "../../assets/python/python.svg";
+import js_logo from "../../assets/javascript/javascript.svg";
+import html_logo from "../../assets/html/html.svg";
+import css_logo from "../../assets/css/css.svg";
+import mongodb_logo from "../../assets/database/mongodb.png";
+import postgresql_logo from "../../assets/database/postgresql.png";
 
 const AboutDE = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -18,7 +18,7 @@ const AboutDE = () => {
 
   return (
     <div id="aboutDE" className="profile-card">
-      <h2 className="title">Decendman Pohthmi</h2>
+      <h2 className="titlee">Decendman Pohthmi</h2>
       <img src={de_profile} alt="Decendman Pohthmi" className="about_profile" />
       <p className="text">
         Hi, I'm <span className="highlight">Decendman Pohthmi</span>, a BTech

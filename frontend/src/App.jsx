@@ -1,16 +1,16 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar.jsx';
-import Home from './components/Home.jsx';
-import AboutPage from './components/AboutPage.jsx';
-import Project from './components/Project.jsx';
-import Contact from './components/Contact.jsx';
-import Footer from './components/Footer.jsx';
-import ChatWithMe from './components/ChatWithMe.jsx';
-import AboutDE from './components/AboutDE.jsx';
-import AboutMD from './components/AboutMD.jsx';
-import AboutNI from './components/AboutNI.jsx';
-import AboutSH from './components/AboutSH.jsx';
+import Navbar from './components/Navbar/Navbar.jsx';
+import Home from './components/Home/Home.jsx';
+import AboutPage from './components/Aboutpage/AboutPage.jsx';
+import Contact from './components/Contact/Contact.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import ChatWithMe from './components/Chat/ChatWithMe.jsx';
+import AboutDE from './components/About/AboutDE.jsx';
+import AboutMD from './components/About/AboutMD.jsx';
+import AboutNI from './components/About/AboutNI.jsx';
+import AboutSH from './components/About/AboutSH.jsx';
+import Project from './components/Project/Project.jsx';
 
 const App = () => {
   return (

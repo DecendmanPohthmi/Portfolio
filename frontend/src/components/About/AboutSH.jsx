@@ -1,38 +1,39 @@
 import React from "react";
 import './About.css'
 import { useNavigate } from "react-router-dom";
-import md_profile from "../assets/MD_profile.jpeg";
-import java_logo from "../assets/java/java.svg";
-import c_logo from "../assets/c/c.svg";
-import python_logo from "../assets/python/python.svg";
-import js_logo from "../assets/javascript/javascript.svg";
-import html_logo from "../assets/html/html.svg";
-import css_logo from "../assets/css/css.svg";
-import mongodb_logo from "../assets/database/mongodb.png";
-import postgresql_logo from "../assets/database/postgresql.png";
+import sh_profile from "../../assets/Sh_profile.jpeg";
+import java_logo from "../../assets/java/java.svg";
+import c_logo from "../../assets/c/c.svg";
+import python_logo from "../../assets/python/python.svg";
+import js_logo from "../../assets/javascript/javascript.svg";
+import html_logo from "../../assets/html/html.svg";
+import css_logo from "../../assets/css/css.svg";
+import mongodb_logo from "../../assets/database/mongodb.png";
+import postgresql_logo from "../../assets/database/postgresql.png";
 
-const AboutMD = () => {
+const AboutSH = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 
   const navigate = useNavigate();
 
   return (
-    <div id="aboutMD" className="profile-card">
-            <h2 className="title">MD Khalid Ansari</h2>
+    <div id="aboutSR" className="profile-card">
+            <h2 className="titlee">Sivraj Deka</h2>
             <img
-              src={md_profile}
-              alt="Khalid Ansari "
+              src={sh_profile}
+              alt="Shivraj Deka"
               className="about_profile"
             />
             <p className="text">
-              Hi, I'm <span className="highlight">Md Khalid Ansari</span>, a
-              BTech CSE student passionate about software development, web
-              development.
+              Hi, I'm <span className="highlight">Sivraj Deka</span>, a BTech
+              CSE student passionate about web designing, web development.
             </p>
             <p className="text">
-              I specialize in backend development, working with technologies
-              like Python, PostgreSQL, and MongoDB. I also have experience with
-              full-stack development using the MERN stack.
+              I specialize in front-end and UI/UX designing, working with
+              technologies like Figma, Canva, Adobe XD. I'am also learning
+              full-stack development with MERN stack. Also i have invested my
+              time in learning about game development as I have a keen interest
+              in that technology too.
             </p>
             <p className="text">
               Currently, I'm working on a subscription-based food delivery
@@ -44,14 +45,12 @@ const AboutMD = () => {
                 <ul>
                   <img src={java_logo} alt="Java" />
                   <img src={python_logo} alt="Python" />
-                  <img src={c_logo} alt="C" />
                   <img src={js_logo} alt="JavaScript" />
                   <img src={css_logo} alt="CSS" />
                   <img src={html_logo} alt="HTML" />
                   {/* Duplicate the images to create a smooth infinite loop */}
                   <img src={java_logo} alt="Java" />
                   <img src={python_logo} alt="Python" />
-                  <img src={c_logo} alt="C" />
                   <img src={js_logo} alt="JavaScript" />
                   <img src={css_logo} alt="CSS" />
                   <img src={html_logo} alt="HTML" />
@@ -63,7 +62,7 @@ const AboutMD = () => {
               <h3>Contact & Links</h3>
               <ul>
                 <li>
-                  <a href="https://github.com/your-github" target="_blank">
+                  <a href="https://github.com/ShivDeka" target="_blank">
                     GitHub
                   </a>
                 </li>
@@ -81,7 +80,7 @@ const AboutMD = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:mdkhalid.finance@gmail.com">Email</a>
+                  <a href="mailto:shivdeka0987@gmail.com">Email</a>
                 </li>
               </ul>
             </div>
@@ -90,4 +89,4 @@ const AboutMD = () => {
   );
 };
 
-export default AboutMD;
+export default AboutSH;

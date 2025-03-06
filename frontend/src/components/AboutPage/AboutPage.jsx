@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import './AboutPage.css';
-import de_profile from "../assets/about_profile.jpg";
-import md_profile from "../assets/MD_profile.jpeg";
-import sh_profile from "../assets/Sh_profile.jpeg";
-import ni_profile from "../assets/NI_profile.jpeg";
+import de_profile from "../../assets/about_profile.jpg";
+import md_profile from "../../assets/MD_profile.jpeg";
+import sh_profile from "../../assets/Sh_profile.jpeg";
+import ni_profile from "../../assets/NI_profile.jpeg";
 
 const aboutProfiles = [
   { path: "/about-de", src: de_profile, alt: "About Decendman Pohthmi" },
