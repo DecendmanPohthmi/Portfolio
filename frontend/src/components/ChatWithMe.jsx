@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './ChatWithMe.css';
+import './ChatWithMe.css'
 import { io } from "socket.io-client";
 
 // Move socket initialization outside component to avoid reconnections on re-renders

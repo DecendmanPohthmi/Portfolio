@@ -1,0 +1,83 @@
+/* Global styles to ensure full-screen components */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+  }
+
+  
+  body {
+    font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  /* Full-screen sections */
+  #home, #about, #project, #contact {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* For snap scrolling effect (optional) */
+  .app-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .app-container > div {
+    scroll-snap-align: start;
+  }
+  
+  /* For navigation (if you have a navbar) */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #0066cc;
+  }
+
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      padding: 10px;
+    }
+    
+    .nav-links a {
+      margin: 0 10px;
+      font-size: 0.9rem;
+    }
+  }

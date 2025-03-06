@@ -1,7 +1,7 @@
 import React from 'react';
-import './Project.css';
-import portfolioImage from '../../assets/porfolio_image.png';
-import tastybitesImage from '../../assets/tastybite_image.png';
+import './Project.css'
+import portfolioImage from '../assets/porfolio_image.png';
+import tastybitesImage from '../assets/tastybite_image.png';
 
 const projects = [
   {
