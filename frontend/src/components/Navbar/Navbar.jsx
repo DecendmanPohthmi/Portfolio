@@ -17,7 +17,7 @@ const Navbar = () => {
         <li><Anchorlink className="anchor-link" href="#project"><p>Project</p></Anchorlink></li>
         <li><Anchorlink className="anchor-link" href="#contact"><p>Contact</p></Anchorlink></li>
         <li><Anchorlink className="anchor-link" href="#chat"><p>Chat</p></Anchorlink></li>
-      </ul>
+        <li><Anchorlink className="anchor-link" href="#resume"><p>Resume Download</p></Anchorlink></li>      </ul>
 
       <div className="nav-connect"><Anchorlink className="anchor-link" href="#contact">Connect with Us</Anchorlink></div>
     </nav>

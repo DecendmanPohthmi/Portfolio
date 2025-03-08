@@ -11,6 +11,7 @@ import AboutMD from './components/About/AboutMD.jsx';
 import AboutNI from './components/About/AboutNI.jsx';
 import AboutSH from './components/About/AboutSH.jsx';
 import Project from './components/Project/Project.jsx';
+import ResumeDownload from "./components/Resume/resume.jsx";
 
 const App = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -27,6 +28,7 @@ const App = () => {
             <Project />
             <Contact />
             <ChatWithMe />
+            <ResumeDownload />
           </>
         } />
         

@@ -1,0 +1,57 @@
+.resume {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .head {
+    font-size: 2rem;
+    color: #6C63FF;
+    margin-bottom: 10px; /* Reduced spacing */
+    background: transparent;
+  }
+  
+  .resume-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 380px;
+  }
+  
+  .resume-input, .resume-download {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .resume-input {
+    border: 1px solid #ccc;
+  }
+  
+  .resume-download {
+    background: #6C63FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .resume-download:hover {
+    background: #4B45D1;
+  }
+  
+  .download-message {
+    font-size: 1.1rem;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
