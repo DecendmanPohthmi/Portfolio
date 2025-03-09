@@ -5,12 +5,17 @@ const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
+    console.log("Access Key:", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
 
-    formData.append("access_key", "4e388797-8b76-4af8-88b3-636755c7d17a"); // Corrected the access key duplication
-
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-
+  
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+    if (!accessKey) {
+      console.error("Access key is missing!");
+      return;
+    }
+  
+    formData.append("access_key", accessKey);
+  
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -18,19 +23,25 @@ const Contact = () => {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: json,
-      }).then((res) => res.json());
-
-      if (res.success) {
-        console.log("Success", res);
-        event.target.reset(); // Clear form after submission
+        body: JSON.stringify(Object.fromEntries(formData)),
+      });
+  
+      const data = await res.json();
+  
+      if (data.success) {
+        console.log("Success:", data);
+        event.target.reset();
       } else {
-        console.error("Error:", res);
+        console.error("Error response:", data);
+        alert(data.message || "Submission failed");
       }
     } catch (error) {
       console.error("Fetch error:", error);
+      alert("Something went wrong. Please try again.");
     }
   };
+  
+  
 
   return (
     <div id="contact" className="contact-container">
