@@ -18,7 +18,7 @@ const AboutNI = () => {
 
   return (
     <div id="aboutNI" className="profile-card">
-      <h2 className="titlee">Nitesh Sharma</h2>
+      <h2 className="titlee">Nitesh Sharma.</h2>
       <img src={ni_profile} alt="Nitesh Sharma" className="about_profile" />
       <p className="text">
         Hi, I'm <span className="highlight">Nitesh Sharma</span>, a BTech CSE

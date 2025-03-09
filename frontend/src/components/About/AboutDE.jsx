@@ -64,7 +64,7 @@ const AboutDE = () => {
         <ul>
           <li>
             <a href="https://github.com/DecendmanPohthmi" target="_blank">
-              GitHub
+              GitHub.
             </a>
           </li>
           <li>
