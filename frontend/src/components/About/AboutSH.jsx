@@ -80,6 +80,14 @@ const AboutSH = () => {
                   </a>
                 </li>
                 <li>
+                  <a
+                    href="https://www.linkedin.com/in/shivraj-deka-a2b6a1286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
                   <a href="mailto:shivdeka0987@gmail.com">Email</a>
                 </li>
               </ul>

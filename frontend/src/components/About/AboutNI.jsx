@@ -1,5 +1,5 @@
 import React from "react";
-import './About.css'
+import "./About.css";
 import { useNavigate } from "react-router-dom";
 import ni_profile from "../../assets/NI_profile.jpeg";
 import java_logo from "../../assets/java/java.svg";
@@ -18,73 +18,80 @@ const AboutNI = () => {
 
   return (
     <div id="aboutNI" className="profile-card">
-            <h2 className="titlee">Nitesh Sharma</h2>
-            <img
-              src={ni_profile}
-              alt="Nitesh Sharma"
-              className="about_profile"
-            />
-            <p className="text">
-              Hi, I'm <span className="highlight">Nitesh Sharma</span>, a BTech
-              CSE student passionate about software development, web
-              development.
-            </p>
-            <p className="text">
-              I specialize in backend development, working with technologies
-              like Python, PostgreSQL, and MongoDB. I also have experience with
-              full-stack development using the MERN stack.
-            </p>
-            <p className="text">
-              Currently, I'm working on a subscription-based food delivery
-              system for TastyBites.. I'm also expanding my portfolio.
-            </p>
+      <h2 className="titlee">Nitesh Sharma</h2>
+      <img src={ni_profile} alt="Nitesh Sharma" className="about_profile" />
+      <p className="text">
+        Hi, I'm <span className="highlight">Nitesh Sharma</span>, a BTech CSE
+        student passionate about software development, web development.
+      </p>
+      <p className="text">
+        I specialize in backend development, working with technologies like
+        Python, PostgreSQL, and MongoDB. I also have experience with full-stack
+        development using the MERN stack.
+      </p>
+      <p className="text">
+        Currently, I'm working on a subscription-based food delivery system for
+        TastyBites.. I'm also expanding my portfolio.
+      </p>
 
-            <div className="programming-logo">
-              <div className="logo-track">
-                <ul>
-                  <img src={java_logo} alt="Java" />
-                  <img src={python_logo} alt="Python" />
-                  <img src={js_logo} alt="JavaScript" />
-                  <img src={css_logo} alt="CSS" />
-                  <img src={html_logo} alt="HTML" />
-                  {/* Duplicate the images to create a smooth infinite loop */}
-                  <img src={java_logo} alt="Java" />
-                  <img src={python_logo} alt="Python" />
-                  <img src={js_logo} alt="JavaScript" />
-                  <img src={css_logo} alt="CSS" />
-                  <img src={html_logo} alt="HTML" />
-                </ul>
-              </div>
-            </div>
+      <div className="programming-logo">
+        <div className="logo-track">
+          <ul>
+            <img src={java_logo} alt="Java" />
+            <img src={python_logo} alt="Python" />
+            <img src={js_logo} alt="JavaScript" />
+            <img src={css_logo} alt="CSS" />
+            <img src={html_logo} alt="HTML" />
+            {/* Duplicate the images to create a smooth infinite loop */}
+            <img src={java_logo} alt="Java" />
+            <img src={python_logo} alt="Python" />
+            <img src={js_logo} alt="JavaScript" />
+            <img src={css_logo} alt="CSS" />
+            <img src={html_logo} alt="HTML" />
+          </ul>
+        </div>
+      </div>
 
-            <div className="contact-details">
-              <h3>Contact & Links</h3>
-              <ul>
-                <li>
-                  <a href="https://github.com/your-github" target="_blank">
-                    GitHub
-                  </a>
-                </li>
-                <li>
-                  <a href="https://leetcode.com/your-leetcode" target="_blank">
-                    LeetCode
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://instagram.com/your-instagram"
-                    target="_blank"
-                  >
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:mrnitesh2580@gmail.com">Email</a>
-                </li>
-              </ul>
-            </div>
-            <button onClick={() => navigate(-1)}>Go Back</button>
-          </div>
+      <div className="contact-details">
+        <h3>Contact & Links</h3>
+        <ul>
+          <li>
+            <a
+              href="Github https://github.com/Niteshsharma2005"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="leetcode.com/problem-list/2e9mb3wt/" target="_blank">
+              LeetCode
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/nitesh-sharma-598775291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              href="Nitesh sharma 
+insta - https://www.instagram.com/its.me__nitesh?igsh=aGtmamNib2I3bGs2&utm_source=qr"
+              target="_blank"
+            >
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="mailto:mrnitesh2580@gmail.com">Email</a>
+          </li>
+        </ul>
+      </div>
+      <button onClick={() => navigate(-1)}>Go Back</button>
+    </div>
   );
 };
 

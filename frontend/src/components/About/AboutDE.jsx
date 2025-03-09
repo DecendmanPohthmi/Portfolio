@@ -63,17 +63,22 @@ const AboutDE = () => {
         <h3>Contact & Links</h3>
         <ul>
           <li>
-            <a href="https://github.com/your-github" target="_blank">
+            <a href="https://github.com/DecendmanPohthmi" target="_blank">
               GitHub
             </a>
           </li>
           <li>
-            <a href="https://leetcode.com/your-leetcode" target="_blank">
+            <a href="https://leetcode.com/u/0sYc79dwAP/" target="_blank">
               LeetCode
             </a>
           </li>
           <li>
-            <a href="https://instagram.com/your-instagram" target="_blank">
+            <a href="https://www.linkedin.com/in/decendman-pohthmi-687176291" target="_blank">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/decend_pohthmi/?hl=en" target="_blank">
               Instagram
             </a>
           </li>
