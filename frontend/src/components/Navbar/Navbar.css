@@ -1,56 +1,87 @@
-/* General Navbar Styling */
 .navbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: auto; /* Auto width to keep it small */
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(8px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
+  background: #1e1e1e;
+  padding: 15px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   z-index: 1000;
-  transition: all 0.3s ease-in-out;
-  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Logo */
 .logo img {
-  height: 30px;
-  cursor: pointer;
+  width: 90px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Desktop Navigation Menu */
+.logo img:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
 .nav-menu {
-  list-style: none;
   display: flex;
-  gap: 15px;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .nav-menu li {
-  display: inline-block;
+  margin: 0 15px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.anchor-link {
+.nav-menu li:hover {
+  background: rgba(108, 99, 255, 0.3);
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(108, 99, 255, 0.5);
+}
+
+.nav-menu li .anchor-link {
   text-decoration: none;
   color: white;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 5px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out;
 }
 
-.anchor-link:hover {
-  color: #4CAF50;
+.nav-menu li .anchor-link:hover {
+  color: #6c63ff;
 }
 
-/* Hamburger Icon (Hidden on Desktop) */
+.nav-connect {
+  background: linear-gradient(135deg, #6c63ff, #4b45d1);
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(108, 99, 255, 0.5);
+}
+
+.nav-connect:hover {
+  background: linear-gradient(135deg, #4b45d1, #3933b5);
+  transform: scale(1.1);
+}
+
+.nav-connect .anchor-link {
+  text-decoration: none;
+  color: white;
+}
+
 .hamburger {
   display: none;
-  font-size: 25px;
-  color: white;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -83,10 +114,67 @@
 
   .nav-menu li {
     padding: 8px 0;
+    font-size: 10px;
+
+    
   }
 
   /* Hide nav-connect on small screens */
   .nav-connect {
     display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Adjust navbar padding for better spacing */
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  /* Reduce logo size slightly */
+  .logo img {
+    width: 75px;
+  }
+
+  /* Adjust nav-menu spacing */
+  .nav-menu li {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  /* Adjust nav-connect button size */
+  .nav-connect {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+
+  /* Show hamburger menu on tablets */
+  .hamburger {
+    display: block;
+    font-size: 28px;
+  }
+
+  /* Modify mobile menu for better visibility */
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    width: 220px; /* Wider menu */
+    padding: 12px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-menu li {
+    font-size: 14px;
+    padding: 10px 0;
   }
 }
