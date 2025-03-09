@@ -10,7 +10,7 @@ const ResumeDownload = () => {
     if (!email) return alert("Please enter your email");
 
     try {
-      const response = await fetch("http://localhost:3000/save-email", {
+      const response = await fetch("https://portfolio-backend-6a2z.onrender.com/save-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
@@ -20,7 +20,7 @@ const ResumeDownload = () => {
 
       if (data.download) {
         setSubmitted(true);
-        window.location.href = "http://localhost:3000/resume.pdf";
+        window.location.href = "https://portfolio-backend-6a2z.onrender.com/resume.pdf";
       } else {
         alert(data.message || "Something went wrong");
       }

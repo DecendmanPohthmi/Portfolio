@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import "./AdminChat.css";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://portfolio-backend-6a2z.onrender.com");
 
 const AdminChat = () => {
   const [messages, setMessages] = useState([]);

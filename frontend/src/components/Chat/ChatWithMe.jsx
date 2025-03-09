@@ -3,7 +3,7 @@ import './ChatWithMe.css'
 import { io } from "socket.io-client";
 
 // Move socket initialization outside component to avoid reconnections on re-renders
-const socket = io("http://localhost:3000");
+const socket = io("https://portfolio-backend-6a2z.onrender.com");
 
 const ChatWithMe = () => {
   const [messages, setMessages] = useState([]);
