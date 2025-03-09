@@ -81,3 +81,23 @@ h1 span {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack elements on smaller screens */
+    text-align: center;
+  }
+
+  .text {
+    max-width: 90%; /* Adjust text width */
+  }
+
+  .image-container {
+    margin-top: 15px;
+    max-width: 250px; /* Reduce image size */
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto;
+  }
+}
